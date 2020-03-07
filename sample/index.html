@@ -2,12 +2,21 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Practice</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <header class="header">
-  ヘッダー
+  <div id="slick01" class="slick">
+    <div><a href="#content01"><img src="images/dummy.png" alt="デモ1" width="450" height="300"></a></div>
+    <div><a href="#content02"><img src="images/dummy.png" alt="デモ2" width="450" height="300"></a></div>
+    <div><a href="#content03"><img src="images/dummy.png" alt="デモ3" width="450" height="300"></a></div>
+    <div><a href="#content04"><img src="images/dummy.png" alt="デモ4" width="450" height="300"></a></div>
+  </div>
+
 </header>
 <main class="main-wrap">
   <article class="main">
@@ -22,5 +31,7 @@
 </footer>
 
 </body>
-<script type="javascript" src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/main.js"></script>
 </html>

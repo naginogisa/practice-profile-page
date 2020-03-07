@@ -1,13 +1,16 @@
 body {
   margin: 0;
+  height: 100%;
+  background: linear-gradient(#F3F7BC, #2DC847);
 }
 
 .header {
   text-align: center;
-  height: 80px;
+  height: 350px;
   width: 980px;
-  background: red;
-  margin: 0 auto;
+  background: #EBF0F5;
+  margin: 40px auto 0 auto;
+  padding-top: 50px;
 }
 
 .footer {
@@ -28,12 +31,61 @@ body {
 .main-wrap>.main {
   height: 100%;
   width: 680px;
-  background: blue;
+  background: #EBF0F5;
   float: left;
 }
+
 .main-wrap>.sidebar {
   height: 100%;
   width: 300px;
   background: green;
   float: left;
 }
+.slick {
+  padding-left: 250px;
+}
+
+.slick .slick-prev {
+  left: 25px
+}
+
+.slick .slick-next {
+  right: 25px
+}
+
+@media screen and (max-width:750px) {
+  /*　画面サイズが1024pxからはここを読み込む　*/
+  body {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer {
+    text-align: left;
+    width: 100%;
+  }
+
+  .main-wrap {
+    text-align: left;
+    height: auto;
+    width: 100%;
+  }
+
+  .main-wrap>.main {
+    height: 500px;
+    width: 100%;
+    float: none;
+  }
+  .main-wrap>.sidebar {
+    height: 500px;
+    width: 100%;
+    float: none;
+  }
+
+}
+
