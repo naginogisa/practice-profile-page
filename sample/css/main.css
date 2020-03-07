@@ -1,51 +1,64 @@
 body {
   margin: 0;
-  height: 100%;
-  background: linear-gradient(#F3F7BC, #2DC847);
+  color: #8e151d;
+  background: #EBF0F5;
 }
 
 .header {
-  text-align: center;
-  height: 350px;
   width: 980px;
-  background: #EBF0F5;
-  margin: 40px auto 0 auto;
-  padding-top: 50px;
+  height: auto;
+  background: #2cafcf;
+  margin: 0 auto;
 }
 
 .footer {
   text-align: center;
-  height: 80px;
   width: 980px;
+  height: 25px;
   background: black;
   margin: 0 auto;
+  padding: 5px 0;
 }
 
 .main-wrap {
-  text-align: center;
-  height: 500px;
+  text-align: left;
   width: 980px;
+  height: 500px;
   margin: 0 auto;
 }
 
 .main-wrap>.main {
+  width: 660px;
   height: 100%;
-  width: 680px;
-  background: #EBF0F5;
+  background: #2cafcf;
   float: left;
+  padding-left: 20px;
+}
+
+.main dt {
+  font-weight: bold;
+  float: left;
+}
+
+.main dd {
+  margin-left: 80px;
 }
 
 .main-wrap>.sidebar {
-  height: 100%;
   width: 300px;
-  background: green;
+  height: 100%;
+  overflow-y: auto;
+  background: #2cafcf;
   float: left;
 }
-.slick {
-  padding-left: 250px;
+
+.image {
+  width: 980px;
+  height: 550px;
 }
 
 .slick .slick-prev {
+  z-index: 10;
   left: 25px
 }
 
@@ -53,39 +66,70 @@ body {
   right: 25px
 }
 
+h1 {
+  position: absolute;
+  z-index: 10;
+  margin: 0;
+  padding: 30px;
+  font-size: 50px;
+}
+
 @media screen and (max-width:750px) {
-  /*　画面サイズが1024pxからはここを読み込む　*/
+  /* 画面サイズが750px以下はここを読み込む */
   body {
     font-size: 1.5rem;
   }
 
   .header {
-    text-align: left;
     width: 100%;
+    height: auto;
     margin: 0;
   }
 
   .footer {
-    text-align: left;
+    text-align: center;
     width: 100%;
+    height: 40px;
   }
 
   .main-wrap {
     text-align: left;
-    height: auto;
     width: 100%;
+    height: auto;
   }
 
   .main-wrap>.main {
-    height: 500px;
-    width: 100%;
+    width: 95%;
+    height: auto;
     float: none;
+    padding: 15px 0 15px 5%;
   }
+
   .main-wrap>.sidebar {
-    height: 500px;
     width: 100%;
+    height: 450px;
     float: none;
   }
 
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    padding: 15px 30px;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  dl {
+    margin: 0;
+  }
 }
 
