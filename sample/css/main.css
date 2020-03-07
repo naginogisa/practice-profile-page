@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  height: 80px;
+  width: 980px;
+  background: red;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  height: 80px;
+  width: 980px;
+  background: black;
+  margin: 0 auto;
+}
+
+.main-wrap {
+  text-align: center;
+  height: 500px;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.main-wrap>.main {
+  height: 100%;
+  width: 680px;
+  background: blue;
+  float: left;
+}
+.main-wrap>.sidebar {
+  height: 100%;
+  width: 300px;
+  background: green;
+  float: left;
+}
